@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+   <servlet>
+   		<servlet-name>previousrec</servlet-name>
+   		<servlet-class>com.record.PreviousrecServlet</servlet-class>
+   </servlet>    
+   <servlet-mapping>
+   		<servlet-name>previousrec</servlet-name>
+   		<url-pattern>/previousrecord</url-pattern>
+   </servlet-mapping>
+     
+   <servlet>
+   		<servlet-name>transferfundinsert</servlet-name>
+   		<servlet-class>com.record.TransferfundinsertServlet</servlet-class>
+   </servlet>    
+   <servlet-mapping>
+   		<servlet-name>transferfundinsert</servlet-name>
+   		<url-pattern>/transaction</url-pattern>
+   </servlet-mapping>      
+         
+    <servlet>
+    	<servlet-name>transferfundsupdate</servlet-name>
+    	<servlet-class>com.record.TransactionUpdateServlet</servlet-class>
+    </servlet>     
+     <servlet-mapping>
+     	<servlet-name>transferfundsupdate</servlet-name>
+     	<url-pattern>/updateTransaction</url-pattern>
+     </servlet-mapping>   
+     
+	<servlet>
+		<servlet-name>deletetransaction</servlet-name>
+		<servlet-class>com.record.deleteTransactionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deletetransaction</servlet-name>
+		<url-pattern>/deleteTransaction</url-pattern>
+	</servlet-mapping> 
+</web-app>
